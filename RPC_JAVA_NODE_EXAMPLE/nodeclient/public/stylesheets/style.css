@@ -1,0 +1,83 @@
+body {
+  padding: 0 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+  
+}
+
+p{
+	max-width: 700px;
+}
+
+#menu{
+	background-color: #333333;
+	width: 100%;
+	float: left;
+	padding-right: 80px;
+	margin-left: -40px;
+	margin-bottom: 20px;
+}
+
+#menu li{
+	display: block;
+	color: #ffffff;
+	font-size: 20px;
+	float: left;
+	padding-bottom: 15px;
+	padding-right: 30px;
+}
+
+#right{
+	width: 490px;
+	min-height: 450px;
+	float: left;
+	margin-left: -70px;
+	margin-top: 20px;
+
+	background-image: url(../images/bubble.gif);
+	background-repeat: no-repeat;
+}
+
+#myArea{
+	width: 310px;
+	height: 220px;
+	overflow-y:scroll;
+	overflow-x:hidden; 
+	border: none;
+
+	margin-left: 120px;
+	margin-top: 80px;
+
+	padding-right: 80px;
+
+	float: left;
+}
+
+#myArea hr{
+	border-color: #fff;
+}
+
+#maurice{
+	width: 422px;
+	height: 413px;
+	background-image: url(../images/maurice.gif);
+	float: left;
+	margin-top: 20px;
+}
+
+#form{
+	width: 400px;
+	margin-left: 100px;
+	margin-top: 80px;
+	float: left;
+}
+
+footer{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+}

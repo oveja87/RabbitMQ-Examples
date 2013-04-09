@@ -1,0 +1,30 @@
+extends layout    
+
+block content  
+  #maurice
+  #right
+    #myArea 
+    #form
+      p Ask Maurice a question and his magic baguette will answer
+      input(type='text', value='', name="myText", id="msg")
+      input(type='button', value='ask question', id="send")
+      <br /><br />
+
+  script(type='text/javascript')
+    var socket = io.connect('http://localhost:3000');
+    socket.on('receive message', function(data){
+      console.log(data);
+      $("#myArea").append(
+        "<p><strong>Your Question:</strong> " +
+        data.message + 
+        "</p><p><strong>The Oracles Answer:</strong> " + 
+        data.response + 
+        "<hr />"
+      );       
+    });
+    $('#send').click(function(){
+      socket.emit("send message", $('#msg').val());
+    });
+
+
+

@@ -1,0 +1,41 @@
+body {
+  padding: 0 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+  
+}
+
+#menu{
+	background-color: #333333;
+	width: 100%;
+	float: left;
+	padding-right: 80px;
+	margin-left: -40px;
+	margin-bottom: 20px;
+}
+
+#menu li{
+	display: block;
+	color: #ffffff;
+	font-size: 20px;
+	float: left;
+	padding-bottom: 15px;
+	padding-right: 30px;
+}
+
+#myArea{
+	width: 400px;
+	height: 200px;
+	overflow-y:scroll;
+	overflow-x:hidden; 
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+
+#myArea hr{
+	border-color: #fff;
+}

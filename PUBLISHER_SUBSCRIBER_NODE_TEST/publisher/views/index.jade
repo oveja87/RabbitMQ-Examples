@@ -1,0 +1,7 @@
+extends layout
+
+block content  
+  p Send some messages here:
+  form(action='/test', method='post')
+    input(type='text', value='', name="myText")
+    input(type='submit', value='Push')

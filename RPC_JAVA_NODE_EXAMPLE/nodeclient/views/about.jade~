@@ -1,0 +1,17 @@
+extends layout
+
+block content  
+	p This is an example of a Remote Procedure Call between a node.js application as a client and a java application as server. The node.js client sends a request message and a server replies with a response message.
+
+	img(src="images/about.gif")
+
+	p The java server can be running on a remote computer. It is waiting for a request from a client. More servers can be started, if there is more power needed
+	
+	p To receive a response at the client, there is send a 'callback' queue address with the request. There is a single callback queue per client. A correlationId property with unique value for every request matches a response with a request. 
+
+	p Within the node.js application, the client communicates with the node.js server by using a socket. The application is built with express
+	
+	h3 Run the RPC
+	First start one or more of the java applications by running rabbitmq-client.jar and RPCServer.java.
+	After that you can start the node.js application on http://localhost:3000.
+	br

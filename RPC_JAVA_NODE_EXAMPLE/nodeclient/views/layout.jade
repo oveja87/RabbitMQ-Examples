@@ -1,0 +1,25 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript',src='/socket.io/socket.io.js')
+    
+    script(type='text/javascript',src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')
+    
+
+  body
+    header
+      h1 Maurice and the magic baguette
+      #menu
+        ul
+          li
+            a(href='/') home
+          li
+            a(href='about') about    
+      h2= title
+    hr
+    block content
+  Footer
+    hr
+    span Scalable Web Architectures - Term 2 - Katrin Hewer - FH Salzburg - 2013

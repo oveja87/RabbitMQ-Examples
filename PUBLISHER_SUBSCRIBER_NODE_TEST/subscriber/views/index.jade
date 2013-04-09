@@ -1,0 +1,18 @@
+extends layout    
+
+block content  
+  p Received Messages:
+  #myArea
+  h3 ey!
+  script(type='text/javascript')
+    $("#myArea").append("<p>Test</p>");
+    var appURL = !{JSON.stringify(urlToListen)};
+    var socket=io.connect(appURL);
+    socket.on('event1', function(messages){
+      console.log(messages.length );
+      for(i=1; i<messages.length; i++){        
+        $("#myArea").append("<hr />"+messages[i]);
+      }
+        
+    });
+
